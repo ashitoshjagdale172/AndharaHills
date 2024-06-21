@@ -1,0 +1,16 @@
+.underline-offset-hover::after {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* This is the offset equivalent */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: currentColor; /* Same color as the text */
+    transition: bottom 0.3s ease; /* Smooth transition */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .underline-offset-hover:hover::after {
+    bottom: -2px; /* Position underline close to the text on hover */
+    opacity: 1; /* Show underline on hover */
+  }
